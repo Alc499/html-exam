@@ -14,14 +14,8 @@
 .person {
   position: relative;
   font-family: Arial;
-  font-size: 1em;
-  line-height: 23px;
   text-align: center;
-  color: #2F4F4F;
   transition: all 1s;
-}
-.person__photo {
-  position: relative;
 }
 .person__photo-img {
   width: 200px;
@@ -44,19 +38,44 @@
   color: #8B0000;
   border-radius: 50%;
 }
+.person__details-name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #2F4F4F;
+}
 .person__details-extra {
   visibility: hidden;
-  transition: visibility 1s;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+.person__details-extra-sport::after {
+  content: ", $$ ";
+}
+.person__details-extra-pay::after {
+  content: "M";
 }
 
 .person:hover {
-  transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+  transform: scale(1.32);
   background: #EEE;
   border-radius: 12px;
 }
 
 .person:hover .person__photo-img {
+  transform: scale(0.9);
   border-radius: 60px;
+}
+
+.person:hover .person__photo-rank {
+  right: 24px;
+}
+
+.person:hover .person__details {
+  transform: scale(0.9);
 }
 
 .person:hover .person__details-extra {

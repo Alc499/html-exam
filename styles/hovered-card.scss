@@ -1,11 +1,24 @@
 .person:hover {
-  transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+
+  transform: scale(1.32);
   background: #EEE;
   border-radius: 12px;
+
 }
 
 .person:hover .person__photo-img {
+  transform: scale(0.9);
   border-radius: 60px;
+}
+
+.person:hover .person__photo-rank {
+  right: 24px;
+}
+
+.person:hover .person__details {
+  transform: scale(0.9);
 }
 
 .person:hover .person__details-extra {

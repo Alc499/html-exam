@@ -1,0 +1,60 @@
+.person {
+  position: relative;
+
+  font-family: Arial;
+  text-align: center;
+
+  transition: all 1s;
+
+  &__photo-img {
+    width: 200px;
+
+    border-radius: 50%;
+    transition: border-radius 1s;
+  }
+
+  &__photo-rank {
+    position: absolute;
+    right: 10px;
+    top: 84px;
+
+    display: block;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    padding: 7px 0;
+
+    background: #fff;
+
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #8B0000;
+
+    border-radius: 50%;
+  }
+
+  &__details-name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #2F4F4F;
+  }
+
+  &__details-extra {
+    visibility: hidden;
+
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+  }
+
+  &__details-extra-sport::after {
+    content: ", $$ ";
+  }
+
+  &__details-extra-pay::after {
+    content: "M";
+  }
+}
