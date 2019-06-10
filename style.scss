@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-column-gap: 30px;
+  justify-content: center;
+  padding-top: 30px;
+
+}
+
+.person {
+  position: relative;
+
+  font-family: Arial;
+  font-size: 1em;
+  line-height: 23px;
+  text-align: center;
+
+  color: #2F4F4F;
+
+  transition: all 1s;
+
+  &__photo{
+  position: relative;
+  }
+
+  &__photo-img {
+    width: 200px;
+
+    border-radius: 50%;
+    transition: border-radius 1s;
+  }
+
+  &__photo-rank {
+    position: absolute;
+    right: 10px;
+    top: 84px;
+
+    display: block;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    padding: 7px 0;
+
+    background: #fff;
+
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #8B0000;
+
+    border-radius: 50%;
+  }
+
+  &__details-extra {
+    visibility: hidden;
+    transition: visibility 1s;
+  }
+}
+
+@import "./styles/media.scss";
+@import "./styles/hovered-card.scss";

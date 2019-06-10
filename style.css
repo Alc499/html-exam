@@ -1,0 +1,71 @@
+@media (min-width: 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-column-gap: 30px;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.person {
+  position: relative;
+  font-family: Arial;
+  font-size: 1em;
+  line-height: 23px;
+  text-align: center;
+  color: #2F4F4F;
+  transition: all 1s;
+}
+.person__photo {
+  position: relative;
+}
+.person__photo-img {
+  width: 200px;
+  border-radius: 50%;
+  transition: border-radius 1s;
+}
+.person__photo-rank {
+  position: absolute;
+  right: 10px;
+  top: 84px;
+  display: block;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  padding: 7px 0;
+  background: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #8B0000;
+  border-radius: 50%;
+}
+.person__details-extra {
+  visibility: hidden;
+  transition: visibility 1s;
+}
+
+.person:hover {
+  transform: scale(1.2);
+  background: #EEE;
+  border-radius: 12px;
+}
+
+.person:hover .person__photo-img {
+  border-radius: 60px;
+}
+
+.person:hover .person__details-extra {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

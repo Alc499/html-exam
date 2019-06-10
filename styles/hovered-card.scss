@@ -1,0 +1,13 @@
+.person:hover {
+  transform: scale(1.2);
+  background: #EEE;
+  border-radius: 12px;
+}
+
+.person:hover .person__photo-img {
+  border-radius: 60px;
+}
+
+.person:hover .person__details-extra {
+  visibility: visible;
+}

@@ -1,0 +1,5 @@
+@media (min-width: 1000px) {
+  .people {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
